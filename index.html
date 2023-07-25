@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+                <!-- Navbar begins -->
+
+
+                 <!-- navbar ends -->
+<body>
+  <header>
+
+    <nav>
+               <!-- left section of menu -->
+       <div class="left_section">
+         <img src="images/icon-menu.svg" alt="Menu button" aria-label="Hamburger-Menu" class="hamburger" id="hamburger">
+         <ul aria-label="menu options" class="Main__menu" id="Main__menu">
+         <img src="./images/icon-close.svg" alt="close menu button" aria-label="close menu" class="close" id="close">
+           <li class="collections" aria-label="Collections">Collections</li>
+           <li class="Men" aria-label="Men">Men</li>
+           <li class="Women" aria-label="Women">Women</li>
+           <li class="About" aria-label="About">About</li>
+          <li  class="Contact" aria-label="Contact">Contact</li>
+         </ul>
+         <ul class="desktop">
+         <li class="collections" aria-label="Collections"><a href="#">Collections</a></li>
+           <li class="Men" aria-label="Men"><a href="#">Men</li>
+           <li class="Women" aria-label="Women"> <a href="#">Women</a></li>
+           <li class="About" aria-label="About"><a href="#">About</a></li>
+          <li  class="Contact" aria-label="Contact"><a href="#">Contact</a></li>
+         </ul>
+         <img src="./images/logo.svg" alt="logo" aria-label="Brand logo" class="logo">
+       </div>
+                   <!-- end of left section -->
+  
+                   <!-- Right section begins -->
+      <div class="right_section">
+        <div class="right_menu_section">
+          <span class="indicator"><p class="indicator__text"></p></span>
+         <img src="./images/icon-cart.svg" alt="cart image" class="cart" aria-label="cart">
+          <img src="./images/image-avatar.png" alt="avatar image" aria-label = "avatar"  class="avatar">
+       </div>
+      </div>
+                <!-- right section ends here -->
+  </nav>
+  </header>
+
+      
+
+
+<main>
+
+<section class="container__flex">
+  <div role="region" aria-label="Product Images" class="product__images">
+    <div class="preview">
+      <img src="./images/image-product-1.jpg" alt="product" class="product">
+      <img src="./images/image-product-2.jpg" alt="product" class="product">
+      <img src="./images/image-product-3.jpg" alt="product" class="product">
+      <img src="./images/image-product-4.jpg" alt="product" class="product">
+    </div>
+    <div role="toolbar" aria-label="Carousel Navigation" class="carousel__btn">
+      <button aria-label="Previous Image" class="previous">
+        <img src="./images/icon-previous.svg" alt="previous" >
+        </button>
+        <button aria-label="Next Image" class="next">
+        <img src="./images/icon-next.svg" alt="next" >
+        </button>
+      </div>
+      <section role="complementary" aria-label="Shopping Basket" class="basket">
+        <h1>cart</h1>
+        <p class="basketchild">Your Cart is Empty</p>
+        <section class= "buy">
+          <div>
+         <img class= "product__image" src="./images/image-product-1-thumbnail.jpg"></img>
+         <div class= "product__info">
+         <p class= "product-title">Fall Limited Edition Sneakers</p>
+         
+  
+         <p class="calc"><span>$125.00</span> x <span id="amountValue">0</span> = <b>$<span id="total">0</span></b></p>
+         </div>
+         <img src="./images/icon-delete.svg" class="del" alt="">
+         </div>
+         <button class="check__out">
+          CheckOut
+        </button>
+         </section>
+      </section>
+      <div role="navigation" aria-label="Small Product Images" class="small__images">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+  </div>
+
+  
+  
+    
+  <section role="region" aria-label="Product Information" class="info">
+    <p>SNEAKER COMPANY</p>
+    <h1>Fall Limited Edition Sneakers</h1>
+    <p class="more__info">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+     <div class=" price" aria-label="price information">
+      <h1>$125.00</h1>
+      <small>50%</small>
+      <del>$250.00</del>
+      </div>
+
+    <div class="buttons">
+      <div class="amount_btn">
+        <button id="minus">
+          <img src="./images/icon-minus.svg" alt="minus">
+        </button>
+        <p class="amount">
+          0
+        </p>
+        <button id="plus">
+          <img src="./images/icon-plus.svg" alt="plus">
+        </button>
+      </div>
+      <button class="add_btn">
+        <img src="./images/icon-cart.svg" alt="cart">Add to cart
+      </button>
+    </div>
+
+    <div role="dialog" aria-modal="true" aria-labelledby="modal-title" class="modal-container" id="modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <img src="./images/image-product-2.jpg" alt="product" class="products">
+       
+      </div>
+    </div>
+    <div class="modal-container" id="modal2">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal2">&times;</span>
+        <img src="./images/image-product-2.jpg" alt="product" class="products">
+      </div>
+    </div>
+    <div class="modal-container" id="modal3">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal3">&times;</span>
+        <img src="./images/image-product-3.jpg" alt="product" class="products">
+      </div>
+    </div>
+    <div class="modal-container" id="modal4">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal4">&times;</span>
+        <img src="./images/image-product-2.jpg" alt="product" class="products">
+      </div>
+      
+    </div>
+    
+    </section>
+  </section>
+</main>
+</body>
+<script
+			  src="https://code.jquery.com/jquery-3.7.0.min.js"
+			  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+			  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Soulbroda</a>.
+  </div>
+  </footer>
+
+
+</html>
+ 
